@@ -1,0 +1,13 @@
+var one = parseInt(prompt('Enter first no.')) ;
+var two = parseInt(prompt('Enter second no.'));
+var three = parseInt(prompt('Enter third no.'));
+
+if(one > two && one > three){
+    document.write(one);
+}
+else if(two > one && two > three){
+    document.write(two);
+}
+else{
+    document.write(three);
+}
