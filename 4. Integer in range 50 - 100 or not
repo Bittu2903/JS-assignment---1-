@@ -1,0 +1,7 @@
+var num1 = parseInt(prompt('Enter no. '));
+if(num1 > 50 && num1 < 100){
+    document.write(num1 + " is in range");
+}
+else{
+    document.write('Not in range');
+}
