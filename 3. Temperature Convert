@@ -1,0 +1,15 @@
+function temperature() {
+var temp1 = prompt("Ex: 37C , 104F.. ");
+const tempConverter = temp => {
+   const degree = temp[temp.length-1];
+   let converted;
+   if(degree === "C") {
+      converted = (parseInt(temp) * 9 / 5 + 32).toFixed(2) + "F";
+   }else {
+      converted = ((parseInt(temp) -32) * 5 / 9).toFixed(2) + "C";
+   };
+   return converted;
+};
+document.write(tempConverter(temp1));
+}
+temperature();
