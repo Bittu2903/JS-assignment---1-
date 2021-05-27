@@ -1,0 +1,45 @@
+function countVowel(str) { 
+
+    const count = str.match(/[aeiou]/gi).length;
+
+    // return number of vowels
+    return count;
+  
+}
+function countAa(str) { 
+    var countA = str.match(/[a]/gi).length; 
+    return countA;   
+}
+function countEe(str) { 
+    var countE = str.match(/[e]/gi).length; 
+    return countE;   
+}
+function countIi(str) { 
+    var countI = str.match(/[i]/gi).length; 
+    return countI;   
+}
+function countOo(str) { 
+    var countO = str.match(/[o]/gi).length; 
+    return countO;   
+}
+function countUu(str) { 
+    var countU = str.match(/[u]/gi).length; 
+    return countU;   
+}
+
+
+// take input
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+const A = countAa(string);
+document.write('A: ' + A + "</br>");
+const E = countEe(string);
+document.write('E: ' + E + "</br>");
+const I = countIi(string);
+document.write('I: ' + I + "</br>");
+const O = countOo(string);
+document.write('O: ' + O + "</br>");
+const U = countUu(string);
+document.write('U: ' + U + "</br>");
+console.log(result);
